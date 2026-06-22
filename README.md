@@ -5,7 +5,7 @@
 **Ripple** is a distributed social media platform demonstrating advanced OOP principles, design patterns, and agile methodology. Built with a service-centric architecture, Ripple enables users to share posts, follow others, like/save content, and stay connected through real-time notifications.
 
 Built by **Team Sumerians**.
-
+📊 [View Project Presentation (PDF)](./Team-Sumerians.pdf)
 ---
 
 ## 📘 Project Overview
