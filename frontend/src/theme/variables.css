@@ -1,0 +1,164 @@
+/* For information on how to create your own theme, please refer to:
+http://ionicframework.com/docs/theming/ */
+
+@import "tailwindcss";
+
+:root {
+  --ion-color-primary: rgb(29, 155, 240);
+  --ion-color-primary-rgb: 29, 155, 240;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: rgb(23, 122, 188);
+  --ion-color-primary-tint: rgb(79, 182, 242);
+
+  --ion-color-secondary: rgb(231, 233, 234);
+  --ion-color-secondary-rgb: 231, 233, 234;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-shade: rgb(203, 205, 206);
+  --ion-color-secondary-tint: rgb(239, 240, 241);
+
+  --ion-color-tertiary: #6030ff;
+  --ion-color-tertiary-rgb: 96,48,255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255,255,255;
+  --ion-color-tertiary-shade: #542ae0;
+  --ion-color-tertiary-tint: #7045ff;
+
+  --ion-color-success: #2dd55b;
+  --ion-color-success-rgb: 45,213,91;
+  --ion-color-success-contrast: #000000;
+  --ion-color-success-contrast-rgb: 0,0,0;
+  --ion-color-success-shade: #28bb50;
+  --ion-color-success-tint: #42d96b;
+
+  --ion-color-warning: #ffc409;
+  --ion-color-warning-rgb: 255,196,9;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0,0,0;
+  --ion-color-warning-shade: #e0ac08;
+  --ion-color-warning-tint: #ffca22;
+
+  --ion-color-danger: #c5000f;
+  --ion-color-danger-rgb: 197,0,15;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255,255,255;
+  --ion-color-danger-shade: #ad000d;
+  --ion-color-danger-tint: #cb1a27;
+
+  --ion-color-light: #f6f8fc;
+  --ion-color-light-rgb: 246,248,252;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0,0,0;
+  --ion-color-light-shade: #d8dade;
+  --ion-color-light-tint: #f7f9fc;
+
+  --ion-color-medium: #5f5f5f;
+  --ion-color-medium-rgb: 95,95,95;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255,255,255;
+  --ion-color-medium-shade: #545454;
+  --ion-color-medium-tint: #6f6f6f;
+
+  --ion-color-dark: #2f2f2f;
+  --ion-color-dark-rgb: 47,47,47;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255,255,255;
+  --ion-color-dark-shade: #292929;
+  --ion-color-dark-tint: #444444;
+
+  
+
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ion-app {
+  height: 100%;
+}
+
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+
+.country-picker-box {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-top: 4px;
+  background-color: black;
+}
+
+/* Fix background + text visibility */
+.country-dropdown select {
+  background-color: #1e1e1e !important; /* dark background */
+  color: #ffffff !important;            /* white text */
+  border: 1px solid #444 !important;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Fix options dropdown */
+.country-dropdown option {
+  color: black !important;               /* visible in dropdown list */
+  background-color: white !important;
+}
+
+/* Placeholder */
+.country-dropdown select option[value=""] {
+  color: #bbb !important;
+}
+
+
+.mobile-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #222;
+  background: #000;
+}
+
+.nav-item {
+  color: #777;
+  font-size: 24px;
+}
+
+.nav-item.active {
+  color: #1da1f2; /* Twitter blue */
+}
+
+html { scrollbar-width: none; } /* Firefox */
+body { -ms-overflow-style: none; } /* IE and Edge */
+body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+
+/* // styles.scss */
+
+ion-content {
+  width: calc(100% + 15px) !important;
+}
+ion-content::part(scroll) {
+  padding-right: 15px !important;
+}
